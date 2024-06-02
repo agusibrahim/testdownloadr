@@ -1,10 +1,8 @@
 name: auto-tambahkan-file
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   auto-nambah:
